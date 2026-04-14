@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/dockerfile
+    container_name: fake-news-backend
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/dockerfile
+    container_name: fake-news-frontend
+    depends_on:
+      - backend
+    ports:
+      - "8501:8501"
+    environment:
+      API_BASE_URL: http://backend:8000
+    restart: unless-stopped
