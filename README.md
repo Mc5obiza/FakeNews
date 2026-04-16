@@ -20,7 +20,7 @@ The FastAPI server then loads that saved model and exposes a `/predict` endpoint
 
 ```bash
 git clone https://github.com/Mc5obiza/FakeNews.giy
-cd Fake-news
+cd Fake-news.git
 ```
 
 2. Build and start the containers:
