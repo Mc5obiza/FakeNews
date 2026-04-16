@@ -19,7 +19,7 @@ The FastAPI server then loads that saved model and exposes a `/predict` endpoint
 1. Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Mc5obiza/FakeNews.giy
 cd Fake-news
 ```
 
